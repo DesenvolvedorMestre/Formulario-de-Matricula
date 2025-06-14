@@ -1,6 +1,7 @@
 * {
-  margin: 0px;
-  border: 0px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -18,8 +19,11 @@
   --color-stroke-default: #D6D3D1;
   --color-stroke-highlight: #F3541C;
   --color-semantic-error: #DC2626;
-  
+
   --font-family: "Popins", "sans-serif";
   --text: 400 1rem/1.5 var(--font-family); /* Definir 1 rem por questão de acessibilidade do usuario */
   --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
+body{
+  overflow: hidden;
 }
