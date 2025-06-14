@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>Estrelas do Amanhã</title>
-  <link rel="stylesheet" href="styles/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-  <div id="app">
-    <main>
-      <div class="main-container">
-        <div class="back">
-         <img src="assets/icons/arrow-left-02.svg" alt="">
-          <span>Voltar</span>
-        </div>  
-        <h1>Formulário de Matricula</h1>
-        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
-      </div>
-    </main>
-    <aside>
-      <div class="aside-container">
-        <header>
-          <img src="assets/logo.svg" alt="">
-          <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
-          <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
-        </header>
-        <img src="assets/icons/Illustration.svg" alt="">
-      </div>
-      </div>    
-     </aside>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Estrelas do Amanhã</title>
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <main>
+        <div class="main-container">
+          <div class="back">
+            <img src="assets/icons/arrow-left-02.svg" alt="" />
+            <span>Voltar</span>
+          </div>
+          <h1>Formulário de Matricula</h1>
+          <p>
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+          <form method:"post" enctype="multipart/form-data"> <!-- toda vez que for enviar um arquivo colocar o enctype -->
+            <fieldset class="child-info">
+              Informações da criança
+              <div class="input-wapper">
+                <label for="fullname">Nome da criança</label>
+                <input type="text" id="fullname" placeholder="João da Silva" />
+              </div>
+              <div class="input-wapper">
+                <label for="birth">Data de nascimento</label>
+                <input type="date" id="birth" lang="pt-BR" />
+              </div>
+              <div class="select-wapper">
+                <label for="gender">Sexo</label>
+                <select name="gender" id="gender">
+                  <option value="female">Feminino</option>
+                  <option value="male">Masculino</option>
+                  <option value="na">Prefiro não responder</option>
+                </select>
+              </div>
+              <div class="text-area-wapper">
+                <label for="magical-info">Informações Médicas</label>
+                <textarea name="medical-info" id="medical-info" placeholder="Texto livre"></textarea>
+              </div>
+              <div class="drop-area-wapper">
+                <input type="file" id="birth-file" name="birth-file">
+                <img src="assets/icons/cloud-upload.svg" alt="">
+                <p>Clique aqui para <br> selecionar os arquivos</p>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+      <aside>
+        <div class="aside-container">
+          <header>
+            <img src="assets/logo.svg" alt="" />
+            <h2>Porque cada momento de <span>aprendizado</span> conta</h2>
+            <p>
+              Inscreva seu filho em nossa escola e veja-o florescer em um
+              ambiente acolhedor, seguro e estimulante.
+            </p>
+          </header>
+          <img src="assets/icons/Illustration.svg" alt="" />
+        </div>
+      </aside>
+    </div>
+  </body>
 </html>
