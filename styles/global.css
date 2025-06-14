@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  border: 0px;
+}
+
+:root {
+  --color-brand-light: #F67841;
+  --color-brand-mid: #F3541C;
+  --color-brand-dark: #E43A12;
+  --color-text-primary: #292524;
+  --color-text-secondary: #57534E;
+  --color-text-tertiary: #8F8881;
+  --color-text-highlight: #E43A12;
+  
+  --color-surface-primary: #FFFFFF;
+  --color-surface-secondary: #FEE7D6;
+  
+  --color-stroke-default: #D6D3D1;
+  --color-stroke-highlight: #F3541C;
+  --color-semantic-error: #DC2626;
+  
+  --font-family: "Popins", "sans-serif";
+  --text: 400 1rem/1.5 var(--font-family); /* Definir 1 rem por questão de acessibilidade do usuario */
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+}
