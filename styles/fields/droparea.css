@@ -19,7 +19,8 @@
 .dropzone p {
   color: #A8A29E;
 }
-.dropzone:hover, :has(input:focus) {
+.dropzone:hover,
+.dropzone:has(input:focus) {
   border-width: 2px;
   border-color: var(--color-stroke-highlight);
   background-color: var(--color-surface-secondary);

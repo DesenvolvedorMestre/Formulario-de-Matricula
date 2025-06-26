@@ -18,9 +18,9 @@ label {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: .25rem solid var(--color-surface-secondary);
-  border: 1.25rem solid var(--color-stroke-hightlight);
-  outline-offset: .1px;
+  border-color: var(--color-stroke-hightlight);
+  box-shadow: 0 0 0 2px var(--color-surface-secondary);
+  outline: none;
 }
 input[type="date"] {
   position: relative;
@@ -67,8 +67,40 @@ select {
   opacity: .5;
 }
 
-input [disabled]{
+input[disabled] {
   background-color: var(--color-surface-disabled);
   border: 1px solid var(--color-stroke-default);
   color: var(--color-text-primary);
+}
+
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border: 0.125rem solid var(--color-semantic-error);
+}
+
+input + small,
+textarea + small,
+select + small {
+  font: var(--text-sm);
+  color: #78718c;
+  display: inline-block;
+  margin-top: .25rem;
+}
+
+input:invalid + .error,
+textarea:invalid + .error,
+select:invalid + .error {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font: var(--text-sm);
+  color: var(--color-semantic-error);
+  margin-top: 0.25rem;
+}
+
+input:valid:not(:focus) + .error,
+textarea:valid:not(:focus) + .error,
+select:valid:not(:focus) + .error {
+  display: none;
 }
