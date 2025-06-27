@@ -1,0 +1,60 @@
+label + .radio-wrapper {
+  margin-top: 1rem;
+}
+.radio-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(7.5rem, 1fr));
+  gap: 1rem;
+}
+.radio-inner{
+  border: 1px solid var(--color-stroke-default);
+  border-radius: .5rem;
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+  padding: 2rem .5rem .5rem;
+  position: relative;
+}
+.radio-inner input,
+.radio-inner input:focus,
+.radio-inner input:hover {
+  all: unset;
+  position: absolute;
+  inset: 0;
+}
+
+.radio-inner .radio-image {
+  background-image: url(../../assets/icons/radio-default.svg);
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.radio-inner:hover,
+.radio-inner:focus-within {
+  border: 1px solid var(--color-stroke-hightlight);
+}
+
+.radio-inner:has(input:checked) {
+  border: 2px solid var(--color-stroke-hightlight);
+}
+
+.radio-inner:focus-within .radio-image,
+.radio-inner:hover .radio-image {
+  background-image: url(../../assets/icons/radio-hover.svg);
+}
+
+.radio-inner input:checked ~ .radio-image {
+  background-image: url(../../assets/icons/radio-checked.svg);
+}
+
+.radio-inner input:checked ~ .radio-label {
+  color: var(--color-text-primary);
+}
+
+.radio-inner input:checked {
+}
+.radio-inner .radio-image {
+  border: none;
+}
