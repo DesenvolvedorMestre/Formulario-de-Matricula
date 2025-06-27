@@ -1,0 +1,31 @@
+button {
+  all: unset; /* tirar formatação default */
+  font-weight: 500;
+  color: var(--color-text-highlight);
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  cursor: pointer; /* quando passar o mouse em cima deixar uma mão */
+}
+
+/* botão primário */
+button.btn-primary {
+  color: #FFFF;
+  background-color: #E43a12;
+}
+
+button.btn-primary:hover,
+button.btn-primary:focus {
+  background-color: #f3541c;
+}
+
+/* botão secundário */
+button.btn-secondary {
+  margin-left: auto;
+  border: 1px solid var(--color-text-highlight);
+}
+
+button.btn-secondary:hover,
+button.btn-secondary:focus {
+  color: #E43a12;
+  outline: .25rem solid var(--color-surface-secondary);
+}

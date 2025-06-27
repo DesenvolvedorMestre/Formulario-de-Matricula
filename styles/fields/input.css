@@ -17,7 +17,7 @@ label {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: var(--color-stroke-hightlight);
+  border-color: var(--color-stroke-highlight);
   box-shadow: 0 0 0 2px var(--color-surface-secondary);
   outline: none;
 }
