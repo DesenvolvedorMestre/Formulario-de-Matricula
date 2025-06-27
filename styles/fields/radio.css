@@ -52,9 +52,6 @@ label + .radio-wrapper {
 .radio-inner input:checked ~ .radio-label {
   color: var(--color-text-primary);
 }
-
-.radio-inner input:checked {
-}
 .radio-inner .radio-image {
   border: none;
 }
